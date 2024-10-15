@@ -269,6 +269,7 @@ class Joystick:
                 # connected to the USB device.  We just drop the update and try later.
                 if halt_on_error:
                     raise
+            return True
 
     def reset_all(self) -> None:
         """Reset all inputs to their idle states."""
